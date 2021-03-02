@@ -1,0 +1,19 @@
+time_units: generations
+demes:
+  - id: X
+    epochs:
+      - end_time: 1000
+        start_size: 2000
+  - id: A
+    ancestors: [X]
+    epochs:
+      - start_size: 2000
+  - id: B
+    ancestors: [X]
+    epochs:
+      - start_size: 2000
+pulses:
+  - source: A
+    dest: B
+    proportion: 0.01
+    time: 50
